@@ -62,7 +62,7 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
         scrollPosition > 0 ? `bg-white shadow-md` : "bg-transparent"
       } `}
     >
-      <nav className=" container m-auto flex items-center justify-between">
+      <nav className="container m-auto flex items-center justify-between">
         <div data-aos="fade-down" className="logo">
           <Link
             onClick={() => window.scrollTo(0, 0)}
@@ -75,11 +75,11 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
         </div>
         
         <div
-          data-aos="fade-down"
           className="nav-items flex items-center space-x-11"
         >
           {/* hamburger */}
           <button
+            data-aos="fade-down"
             onClick={toggleNav}
             className="cursor-pointer text-2xl hidden md:block"
           >
